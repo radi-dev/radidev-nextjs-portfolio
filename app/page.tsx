@@ -6,9 +6,7 @@ import Particles from "./components/particles";
 
 export default function Home() {
   return (
-    <section id="Home" className="fixed top-0 left-[5lvw] h-[90lvh] lg:h-[100lvh] w-[95lvw] flex flex-col pt-[max(100px,15lvh)] m d:pt-0 justify-around m d:justify-center items-center overflow-hidden">
-      {/* <div id="Home" className="fixed h-[85lvh] top-[max(100px,15lvh)] flex flex-col justify-center items-center w-[95lvw] "> */}
-      {/* <div id="Home" className="h-[85lvh] flex flex-col justify-center items-center w-full"> */}
+    <section id="Home" className="fixed top-0 left-[5lvw] h-[90lvh] md:h-[100lvh] w-[95lvw] flex flex-col pt-[max(100px,15lvh)] justify-around items-center overflow-hidden">
 
         <Particles
           className="absolute inset-0 -z-10 animate-fade-in"
@@ -27,15 +25,11 @@ export default function Home() {
         <div className="hidden w-screen h-px animate-glow md:block animate-fade-left bg-gradient-to-r from-zinc-300/0 via-zinc-300/50 to-zinc-300/0" />
         <h1
           className="text-transparent duration-1000 bg-primary text-edge-outline animate-title font-3 whitespace-nowrap bg-clip-text font-black cursor-default flex justify-around items-center text-[22vw] max-h-[20vw] w-full"
-        >
-
-
-          {/* <div className="w-1/2"></div> */}
+      >
           <div className="text-center w-full">R</div>
           <div className="text-center w-full">A</div>
           <div className="text-center w-full">D</div>
-          <div className="text-center w-full">I</div>
-          {/* <div className="w-1/2"></div> */}
+        <div className="text-center w-full">I</div>
         </h1>
 
         <div className="hidden w-screen h-px animate-glow md:block animate-fade-right bg-gradient-to-r from-zinc-300/0 via-zinc-300/50 to-zinc-300/0" />
@@ -52,22 +46,10 @@ export default function Home() {
                 </Link> to streamline lead acquisition using AI-generated content.</p>
             <br />
               <p>- 💼 Open for commisions</p>
-            </h2>
-
-          </div>
-
-        </article>
-      {/* </div> */}
-
-
-
-
-
-
-
+          </h2>
+        </div>
+      </article>
 
     </section>);
-
-
 
 }
