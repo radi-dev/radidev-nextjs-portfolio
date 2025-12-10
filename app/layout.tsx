@@ -66,9 +66,15 @@ export default function RootLayout({
         <Analytics />
       </head>
       <body
-        className={`bg-black ${process.env.NODE_ENV === "development" ? "debug-screens" : undefined
+        className={`bg-secondary ${process.env.NODE_ENV === "development" ? "debug-screens" : undefined
           }`}
-      >
+      >  <div className="fixed top-0 left-0 w-screen h-lvh z-[-1] flex justify-around items-stretch">
+          <div className="line"></div>
+          <div className="line"></div>
+          <div className="line"></div>
+          <div className="line"></div>
+          <div className="line"></div>
+        </div>
         {children}
       </body>
     </html>
