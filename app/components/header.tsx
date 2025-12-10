@@ -19,7 +19,7 @@ export default function Header() {
         return () => observer.disconnect();
     }, []);
 
-    return <header ref={ref}><div id="header" className={`bg-slate-300 fixed top-0 pt-5 left-[5vw] px-2  w-[95lvw] flex justify-between items-end z-50  duration-200 border-b ${isIntersecting
+    return <header ref={ref}><div id="header" className={`fixed top-0 pt-5 left-[5vw] px-2  w-[95lvw] flex justify-between items-end z-50  duration-200 border-b ${isIntersecting
         ? "bg-zinc-900/0 border-transparent"
         : "bg-zinc-900/500  border-dark "
         }`}>

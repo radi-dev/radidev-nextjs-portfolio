@@ -77,7 +77,7 @@ export default function RootLayout({
         </div>
         <Header />
         <Navigation />
-        <div className=" mx-[5lvw]">{children}</div>
+        <div className=" mx-[5lvw] w-[95lvw]">{children}</div>
       </body>
     </html>
   );

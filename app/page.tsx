@@ -6,26 +6,27 @@ import Particles from "./components/particles";
 
 export default function Home() {
   return (
-    <section id="Home" className="h-[98lvh] lg:h-[85lvh] mt-[max(100px,15lvh)] flex flex-col w-[95lvw]">
+    <section id="Home" className="h-[85lvh] mt-[max(100px,15lvh)] flex flex-col justify-center items-center w-[95lvw] overflow-hidden  ">
 
       <Particles
         className="absolute inset-0 -z-10 animate-fade-in"
         quantity={100}
       />
 
-      <div className="font-2 flex items-start p-2 animate-fade-in">
-        <div className=" font-black font-2 text-end text-4xl">
+      <div className="font-2 flex items-start p-2 animate-fade-in w-full">
+        <div className=" font-black font-2 text-end text-2xl lg:text-4xl">
           <p className="me-10 text-light">HELLO THERE!</p>
           <p className=" text-accent mt-12">I AM</p>
         </div>
       </div>
 
 
-      <div className="flex flex-col items-center justify-center w-screen h-screen overflow-hidden">
+      {/* <div className="flex flex-col items-center justify-center w-screen h-screen overflow-hidden"> */}
         <div className="hidden w-screen h-px animate-glow md:block animate-fade-left bg-gradient-to-r from-zinc-300/0 via-zinc-300/50 to-zinc-300/0" />
         <h1
-          className=" text-transparent duration-1000 bg-primary text-edge-outline animate-title font-3 whitespace-nowrap bg-clip-text font-black cursor-default flex justify-around items-center text-[22vw] max-h-[20vw] w-full"
+        className="text-transparent duration-1000 bg-primary text-edge-outline animate-title font-3 whitespace-nowrap bg-clip-text font-black cursor-default flex justify-around items-center text-[22vw] max-h-[20vw] w-full"
         >
+
 
           {/* <div className="w-1/2"></div> */}
           <div className="text-center w-full">R</div>
@@ -53,7 +54,7 @@ export default function Home() {
         </div>
 
       </article>
-      </div>
+      {/* </div> */}
 
 
 
