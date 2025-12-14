@@ -1,5 +1,5 @@
 import "../global.css";
-import { Inter } from "next/font/google";
+import { Inter, Raleway, Montserrat, Poppins } from "next/font/google";
 import LocalFont from "next/font/local";
 import { Metadata } from "next";
 import { Analytics } from "./components/analytics";
@@ -56,13 +56,29 @@ const calSans = LocalFont({
   variable: "--font-calsans",
 });
 
+const raleway = Raleway({
+  subsets: ["latin"],
+  variable: "--font-raleway",
+});
+
+const montserrat = Montserrat({
+  subsets: ["latin"],
+  variable: "--font-montserrat",
+});
+
+const poppins = Poppins({
+  subsets: ["latin"],
+  variable: "--font-poppins",
+  weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
+});
+
 export default function RootLayout({
   children,
 }: {
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en" className={[inter.variable, calSans.variable].join(" ")}>
+    <html lang="en" className={[inter.variable, calSans.variable, raleway.variable, montserrat.variable, poppins.variable].join(" ")}>
       <head>
         <Analytics />
       </head>

@@ -11,9 +11,14 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        1: "Raleway, ui-sans-serif, system-ui, sans-serif",
-        2: "Montserrat, ui-sans-serif, system-ui, sans-serif",
-        3: "Poppins, ui-sans-serif, system-ui, sans-serif",
+        1: ["var(--font-raleway)", "ui-sans-serif", "system-ui", "sans-serif"],
+        2: [
+          "var(--font-montserrat)",
+          "ui-sans-serif",
+          "system-ui",
+          "sans-serif",
+        ],
+        3: ["var(--font-poppins)", "ui-sans-serif", "system-ui", "sans-serif"],
         sans: ["var(--font-inter)", ...defaultTheme.fontFamily.sans],
         display: ["var(--font-calsans)"],
       },
